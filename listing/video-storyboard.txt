@@ -1,0 +1,7 @@
+OPTIONAL 35-SECOND DEMO VIDEO
+0–5 sec: Open Setup Flows; show the inline search field.
+5–13 sec: Search for “account”; show matching rows and the in-field count.
+13–21 sec: Open the column menu; select Process Type; show full-row interaction and multi-column selection.
+21–28 sec: Open settings; show the three defaults and automatic-loading switch.
+28–35 sec: Show manual load, stop and resume. Finish with the logo and support email.
+Record using sample Salesforce data. Do not show customer records, credentials or org identifiers. Publish to a public video URL only if you want an optional listing video; no video has been published as part of this package.

@@ -1,0 +1,14 @@
+{
+  "name": "salesforce-flow-search",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension for local Salesforce Flow-list search",
+  "scripts": {
+    "check": "node scripts/check-package.cjs",
+    "render-assets": "node scripts/render-store-assets.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "sharp": "0.35.4"
+  }
+}

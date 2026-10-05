@@ -1,0 +1,16 @@
+Salesforce Flow Search 1.0.0 — reviewer test instructions
+
+This extension requires access to a Salesforce account with permission to view Setup > Flows. It has no extension-specific login. No private Salesforce credentials are included in this package. The publisher must arrange an appropriate test account if the review team requests one.
+
+1. Install the submitted extension and sign in to Salesforce using your own/test account.
+2. Navigate to /lightning/setup/Flows/home on a Salesforce Setup domain. A Flow table with Flow Label/Flow Name headings must be visible.
+3. The search bar should appear inline in the list header; a floating fallback may appear in narrower layouts. Automatic loading starts by default, scrolling the current list until its item count no longer shows '+'. Stop is available during loading.
+4. Type a known Flow name or another displayed column value. Nonmatching loaded rows hide and the in-field matching/loaded count appears.
+5. Click the field's dropdown and choose a column row. It toggles without closing the menu. Multiple selections match the same text in any selected column. Outside click, Escape, the arrow or clearing text closes the menu.
+6. Open the extension settings: verify all three search defaults, automatic loading, and expanded page settings. Changes save automatically across tabs. The local privacy policy and support contact are linked in the footer.
+7. Disable automatic loading, reload the Flow page, and use the down-arrow icon to load. Stop during loading; the arrow returns to resume. Completed loading returns to the top.
+8. Navigate to /lightning/o/FlowRecord/home: the added UI must be absent so native search remains.
+
+Limitations: local DOM-row filtering, not server-side search. Only loaded rows and exposed API names are searchable. Translated headers, closed shadow roots and table virtualization may require adaptations.
+
+Store screenshots use actual extension controls rendered in an explicitly labeled demo Salesforce layout with fictional records. They are not captures of a live customer org. Fixture browser tests passed during preparation; live-org compatibility should be confirmed before submission.

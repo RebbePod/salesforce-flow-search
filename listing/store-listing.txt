@@ -1,0 +1,61 @@
+NAME
+Salesforce Flow Search
+
+SHORT DESCRIPTION / MANIFEST SUMMARY
+Search Salesforce Flow lists, narrow results by column, and load more flows with simple controls.
+
+DETAILED DESCRIPTION — PASTE THIS IN THE STORE LISTING
+Find the flow you need in Salesforce Setup, without scanning every row by hand.
+
+Salesforce Flow Search adds a compact search field to supported Flow lists. Search across the columns in your loaded list, then use the dropdown to narrow that same text to one or several columns.
+
+SEARCH YOUR WAY
+• Search all displayed columns by default.
+• Choose Flow name only or Flow name and API name as your starting scope.
+• Narrow a search to selected columns without retyping it.
+• See matching and loaded row counts inside the search field.
+• Clear your search with the built-in ×.
+
+CONTROL LOADING
+• Automatically load flows in the current list, enabled by default.
+• Turn automatic loading off and use the load icon when you need more rows.
+• Stop loading and resume using the compact controls inside the field.
+
+KEEP YOUR WORKSPACE CLEAN
+• Search sits alongside the list's existing toolbar controls.
+• Preferences save automatically across tabs in the same Chrome profile.
+• Customize the Salesforce page paths where search appears.
+• The FlowRecord home page keeps its existing native search.
+
+LOCAL PROCESSING
+The extension reads loaded Flow-list cells and the current Salesforce page path to provide its search and page controls. These can include names shown in the list. Search text and page content are processed locally in your browser. Only preferences are saved. No analytics, advertising, developer-server uploads, or Salesforce API calls are included. Your existing Salesforce session is used by Salesforce itself when the list loads more rows.
+
+GOOD TO KNOW
+Search covers rows that Salesforce has loaded into the page. Automatic loading scrolls the current list; it is not server-side search. API names are searchable only when exposed in the loaded list. Layout changes, translated headers, or virtualized lists may affect compatibility.
+
+Designed for Salesforce Setup Flows and supported FlowDefinitionView lists on Lightning and Salesforce Setup domains. An existing Salesforce account with access to those lists is required; the extension does not ask for your Salesforce credentials.
+
+Independent extension. Not affiliated with, endorsed by, or sponsored by Salesforce. Salesforce is a trademark of its respective owner.
+
+Support: salesforceapiformatter@gmail.com
+
+OTHER DASHBOARD FIELDS
+Language: English
+Suggested category: Productivity (select the closest productivity/workflow category offered in the current dashboard)
+Pricing: Free (this build has no payments or subscriptions)
+Mature content: No
+Support email: salesforceapiformatter@gmail.com
+Publisher display name: use your GitHub/developer-account identity; a display name was not supplied
+Support URL: use the Chrome Web Store support hub, or your repository Issues URL after creation
+Homepage: GitHub Pages site after deployment
+Privacy policy URL: GitHub Pages /privacy.html after deployment; do not enter a local file path
+Video: optional; a storyboard is provided if you want to record one
+
+SCREENSHOT ORDER AND CAPTIONS
+1. screenshot-01-search-1280x800.png — Search across loaded Flow-list columns.
+2. screenshot-02-columns-1280x800.png — Narrow the same search to selected columns.
+3. screenshot-03-settings-1280x800.png — Defaults and loading preferences save across tabs.
+4. screenshot-04-loading-1280x800.png — Load, stop, and resume with compact controls.
+
+RELEASE NOTES — 1.0.0
+First store release: all-column Flow-list search, column narrowing, saved search defaults, optional automatic loading, stop/resume controls, configurable page paths, original icons, and a styled settings popup. Experimental Labs/API search is not included.

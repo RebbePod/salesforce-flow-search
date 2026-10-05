@@ -1,0 +1,29 @@
+SINGLE PURPOSE DESCRIPTION
+Help Salesforce users find flows in supported Flow lists through local row search, selectable search columns, and controls for loading additional rows in the current list.
+
+STORAGE PERMISSION JUSTIFICATION
+Save the user's automatic-loading preference, initial search scope, and allowed Salesforce page paths in chrome.storage.local. These preferences apply across tabs in the same Chrome profile. No Salesforce row values or search text are persisted.
+
+SALESFORCE SITE ACCESS / CONTENT-SCRIPT JUSTIFICATION
+The bundled content script runs on *.lightning.force.com and *.salesforce-setup.com to identify supported Flow tables, insert the search field, read displayed cell values, hide nonmatching rows, and scroll the existing list to load additional rows. It checks the current page path against user settings. Salesforce single-page navigation and user-configurable paths require the script to detect route changes on those domains. The UI activates only on configured paths with a Flow table; FlowRecord/home is excluded. all_frames supports Flow lists embedded in Salesforce frames. No access to unrelated websites is requested.
+
+REMOTE CODE
+Select: No, I am not using remote code.
+All executable code, styles and icons are packaged. No remote scripts, eval, analytics SDKs or API requests are used.
+
+DATA TYPES — BASED ON LOCAL HANDLING, NOT DEVELOPER UPLOADS
+Google's FAQ requires disclosures for data handled locally as well as remotely. Suggested conservative declarations for this build:
+• Website content: loaded Flow-list cells, column headings and list status, used locally for filtering/loading.
+• Personally identifiable information: names can appear in cells such as Last Modified By; those values are processed locally as part of all-column search. No user profile is collected.
+• Web history / browsing activity: only the current Salesforce page path/domain is read to decide whether search should activate and for local diagnostics. The extension does not read Chrome browsing history or record a browsing log.
+Other categories: no payments, financial/health data handling as a feature, authentication credentials, private communications, location, or interaction analytics. Do not add a blanket “no data handled” claim: this extension reads page content. If the current dashboard categorizes a local field differently, use its definitions and keep the policy consistent.
+
+DATA USE CERTIFICATIONS
+The code supports these certifications: data is not sold or transferred to third parties; it is used only for the extension's single purpose; it is not used for lending/creditworthiness. Confirm the current dashboard wording and certify only statements that remain true for the package you upload.
+
+PRIVACY POLICY
+Use the public HTTPS URL of docs/privacy.html after publishing GitHub Pages. The extension also bundles the same policy for local viewing from Settings.
+
+Primary references, checked October 5, 2026:
+https://developer.chrome.com/docs/webstore/cws-dashboard-privacy
+https://developer.chrome.com/docs/webstore/program-policies/user-data-faq

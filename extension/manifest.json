@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Salesforce Flow Search",
+  "version": "1.0.0",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "Salesforce Flow Search settings",
+    "default_popup": "settings.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "description": "Search Salesforce Flow lists, narrow results by column, and load more flows with simple controls.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.lightning.force.com/*",
+        "https://*.salesforce-setup.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "exclude_matches": [
+        "https://*.lightning.force.com/lightning/o/FlowRecord/home*",
+        "https://*.salesforce-setup.com/lightning/o/FlowRecord/home*"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
