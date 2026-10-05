@@ -29,6 +29,6 @@ In repository Settings > Pages, choose Deploy from a branch, main and /docs. Git
 
 ## Support and privacy
 
-Contact salesforceapiformatter@gmail.com. See [Privacy policy](docs/privacy.html), [store listing](listing/store-listing.txt), [privacy disclosures](listing/privacy-practices.txt), and [reviewer instructions](review/reviewer-instructions.txt).
+See [Privacy policy](docs/privacy.html), [store listing](listing/store-listing.txt), [privacy disclosures](listing/privacy-practices.txt), and [reviewer instructions](review/reviewer-instructions.txt).
 
 Independent extension; not affiliated with or endorsed by Salesforce. Original logo assets are included in brand. No original extension publisher assets or Salesforce logos are bundled. Store publication and a public privacy-policy URL still need to be completed by the publisher.
